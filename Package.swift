@@ -24,12 +24,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "DDGSyncCrypto",
-            url: "https://github.com/swift-precompiled/sync_crypto/releases/download/0.7.0/DDGSyncCrypto-d20f131b4ffba2459d39568bf4459a2819873119a123ea0412d958d6fabead97.xcframework.zip",
-            checksum: "d20f131b4ffba2459d39568bf4459a2819873119a123ea0412d958d6fabead97"
+            url: "https://github.com/swift-precompiled/sync_crypto/releases/download/0.7.0/DDGSyncCrypto-14a4b77a70821831a16d5624c351bcb729aed68d88ffe602167d2a985180732c.xcframework.zip",
+            checksum: "14a4b77a70821831a16d5624c351bcb729aed68d88ffe602167d2a985180732c"
         ),
         .target(
             name: "DDGSyncCrypto_PrecompiledProduct",
-            dependencies: ["DDGSyncCrypto", "Clibsodium"]
+            dependencies: ["DDGSyncCrypto", "Clibsodium"],
+            packageAccess: false
         )
     ]
 )
