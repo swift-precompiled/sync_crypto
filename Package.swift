@@ -9,7 +9,11 @@ let package = Package(
     products: [
         .library(
             name: "DDGSyncCrypto",
-            targets: ["DDGSyncCrypto_PrecompiledProduct"]
+            targets: [
+                "DDGSyncCrypto",
+                "Clibsodium",
+                "DDGSyncCrypto_PrecompiledProduct"
+            ]
         )
     ],
     targets: [
@@ -20,8 +24,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "DDGSyncCrypto",
-            url: "https://github.com/swift-precompiled/sync_crypto/releases/download/0.7.0/DDGSyncCrypto-064669ecc2b6a730b8dcafdbe3821ca046e60abcd23245615b47ea5034f42424.xcframework.zip",
-            checksum: "064669ecc2b6a730b8dcafdbe3821ca046e60abcd23245615b47ea5034f42424"
+            url: "https://github.com/swift-precompiled/sync_crypto/releases/download/0.7.0/DDGSyncCrypto-d20f131b4ffba2459d39568bf4459a2819873119a123ea0412d958d6fabead97.xcframework.zip",
+            checksum: "d20f131b4ffba2459d39568bf4459a2819873119a123ea0412d958d6fabead97"
         ),
         .target(
             name: "DDGSyncCrypto_PrecompiledProduct",
